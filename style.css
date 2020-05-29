@@ -1,11 +1,129 @@
-*{
-
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 body{
-width: 100vw;
-height: 100vh;
-    background-image: linear-gradient( 88.7deg,  rgba(144,254,229,1) -17.1%, rgba(91,193,239,1) 40.4%, rgba(119,94,173,1) 115.3% );
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+     background: rgb(34,193,195);
+background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(166,45,253,1) 100%);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+}
+#title{
+    text-shadow: 1px 1px 2px rgb(245, 244, 244);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: xx-large;
+    background: linear-gradient(to right top, #e1edff, #31f894, #06eaff, #ffffff, #c0ff38);
+    -webkit-background-clip: text;
+    color: transparent;  
+  text-align: center;
+ }
+.container_box{
+    -webkit-box-shadow: 4px 9px 19px 4pxrgba(255, 255, 255, 0.59);
+-moz-box-shadow: 4px 9px 19px 4px rgba(255, 255, 255, 0.59);
+box-shadow: 4px 9px 19px 4px rgba(255, 255, 255, 0.59);
+    display: flex;
+    justify-content: center;
+flex-direction: column;
+align-items: center;
+    width: 65%;
+    min-width: 500px;
+    height: 65%;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 30px;
+}
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+#resultado{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #004d7a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0% 25% 0% 25%;
+    padding: 5px 0px;
+   
+}
+
+#usuario_eleccion{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #008793;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;    
+    
+}
+
+#maquina_resultado{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(111, 17, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;    
+  
+}
+
+.texto-descripcion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px;
+    color: #008793;
+
+
+}
+.dos{
+color: rgb(111, 17, 219);
+}
+.eleccion{
+    display: flex;
+    justify-content: center;
+ 
+        width: 100%;
+    min-width: 200px;
+    height: 20%;
+    min-height: 100px;
+}
+h3{
+margin: 0, auto;
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+font-size: 4.5vw;
+text-shadow: 2px 0px 2px rgba(150, 150, 150, 1);
+ color:rgb(219, 57, 17);
+ 
+}
+.piedra img,.papel img,.tijera img{
+    width: 80%;
+    max-width: 100px;
+    max-height: 100px;
+    transition:  transform 2s;
+
+}
+.piedra img:hover,.papel img:hover,.tijera img:hover{
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(166,45,253,1) 100%);
+    transform: rotate(90deg);
+border-radius: 20%;
 }

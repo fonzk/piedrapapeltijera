@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,35 @@
     <link rel="stylesheet" href="style.css">
     <script src="game.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        
+
+    <div id="title">
+        <h1> <span id="piedratitle">Piedra</span> <span id="papeltitle">Papel</span> <span id="otitle">o</span> <span
+                id="tijeratitle">Tijera</span></h1>
+    </div>
+    <div class="container_box">
+        <h3>Escoge</h3>
+        <div class="eleccion">
+            
+            <div class="piedra" id="piedra" onclick="juego('Piedra')"> <img src="rock.svg" alt="Piedra"> </div>
+            <div class="papel" id="papel" onclick="juego('Papel')" > <img src="papel.svg" alt="Papel"> </div>
+            <div class="tijera" id="tijera" onclick="juego('Tijera')" > <img src="cortar.svg" alt="Tijera"> </div>
+        </div>
+
+        <div class="container">
+
+            <div>
+                <div class="texto-descripcion">Tu elegiste</div>
+                <div id="usuario_eleccion">---</div>
+            </div>
+            <div>
+                <div class="texto-descripcion dos">El sistema</div>
+                <div id="maquina_resultado" class="dos">---</div>
+            </div>
+            <div id="resultado"></div>
+        </div>
     </div>
 </body>
+
 </html>
